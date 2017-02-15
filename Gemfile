@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use SCSS for stylesheets
@@ -37,5 +36,10 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 # Use sqlite3 as the database for Active Record
   gem 'sqlite3', group: [:development, :test]
-
   gem 'pg', '0.18.4', group: :production
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
