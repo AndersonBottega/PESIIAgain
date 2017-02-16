@@ -1,13 +1,13 @@
 <center><h1>Listing films</h1></center>
 
-<center><table border="1">
+<center><table border="0">
   <thead>
     <tr>
-      <th><h3>Title</h3></th>
-      <th><h3>Classification</h3></th>
-      <th><h3>Quality</h3></th>
-      <th><h3>Year</h3></th>
-      <th><h3>Options</h3></th>
+      <th><h3> Title </h3></th>
+      <th><h3> Classification </h3></th>
+      <th><h3> Quality </h3></th>
+      <th><h3> Year </h3></th>
+      <th><h3> Options </h3></th>
     </tr>
   </thead>
 
@@ -18,9 +18,9 @@
         <td><%= film.Classification %></td>
         <td><%= film.Quality %></td>
         <td><%= film.year %></td>
-        <td><%= link_to 'Show', film %></td>
-        <td><%= link_to 'Edit', edit_film_path(film) %></td>
-        <td><%= button_to 'Destroy', film, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', film %> <%= link_to 'Edit', edit_film_path(film) %>  <%= button_to 'Destroy', film, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+        
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Film', new_film_path %>
+<center><%= link_to 'New Film', new_film_path %></center>
