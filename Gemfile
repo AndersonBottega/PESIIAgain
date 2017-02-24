@@ -34,9 +34,6 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-# Use sqlite3 as the database for Active Record
-  gem 'sqlite3', group: [:development, :test]
-  gem 'pg', '0.18.4', group: :production
 
 group :test do
   gem 'cucumber-rails', :require => false
@@ -47,3 +44,8 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
+
+# Use sqlite3 as the database for Active Record
+  gem 'sqlite3', group: [:development, :test]
+  
+  gem 'pg', '0.18.4', group: :production
