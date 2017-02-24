@@ -20,4 +20,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+     Film:
+      Title: "Título"
+    errors:
+      models:
+        Film:
+          attributes:
+            Title:
+              blank: "O título não pode ser vazio"
